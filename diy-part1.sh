@@ -16,5 +16,8 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+sudo apy-get install -y build-essential clang flex g++ gawk gcc-multilib gettext \
+  git libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev \
+  coccinelle
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
